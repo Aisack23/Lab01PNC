@@ -1,6 +1,6 @@
 package labos.pnc.lab01;
 
-import labos.pnc.lab01.service.Services;
+import labos.pnc.lab01.service.BowService;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -14,7 +14,7 @@ public class Lab01Application {
     }
 
     @Bean
-    public CommandLineRunner run(Services productService) {
+    public CommandLineRunner run(BowService productService) {
         return args -> {
             System.out.println("=== INICIANDO APP ===");
             productService.findAll().forEach(p ->

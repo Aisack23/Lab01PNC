@@ -14,6 +14,6 @@ public class BowRepository {
     private final SpecimensList specimensList;
 
     public List<BOW> findAll() { // Accedemos a la lista de especímenes
-        return specimensList.getSpecimens(); 
+        return specimensList.getSpecimens();
     }
 }

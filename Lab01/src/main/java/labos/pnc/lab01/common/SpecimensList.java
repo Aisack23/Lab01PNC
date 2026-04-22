@@ -50,7 +50,7 @@ public class SpecimensList {
         this.specimens.add(BOW.builder()
                 .id(4L)
                 .name("Licker")
-                .virus("Las Plagas")
+                .virus("T-Virus")
                 .danger(1)
                 .weakness("Fire")
                 .status("Death")
