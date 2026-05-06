@@ -18,7 +18,7 @@ public class WizardController {
 
     @PostMapping("/create")
     public ResponseEntity<Wizard> createProduct(@RequestBody Wizard wizard) {
-        productService.createProduct(wizard);
+        productService.createWizard(wizard);
         return ResponseEntity
                 .status(HttpStatus.CREATED)
                 .body(wizard);

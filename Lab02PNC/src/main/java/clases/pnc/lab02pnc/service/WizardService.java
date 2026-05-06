@@ -3,5 +3,5 @@ package clases.pnc.lab02pnc.service;
 import clases.pnc.lab02pnc.domain.entity.Wizard;
 
 public interface WizardService {
-    void createProduct(Wizard wizard);
+    void createWizard(Wizard wizard);
 }

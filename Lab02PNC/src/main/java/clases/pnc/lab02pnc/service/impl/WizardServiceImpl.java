@@ -9,10 +9,10 @@ import org.springframework.stereotype.Service;
 @Service
 @RequiredArgsConstructor
 public class WizardServiceImpl implements WizardService {
-    private final WizardRepository productWizardRepository;
+    private final WizardRepository wizardRepository;
 
     @Override
-    public void createProduct(Wizard wizard) {
-        productWizardRepository.save(wizard);
+    public void createWizard(Wizard wizard) {
+        wizardRepository.save(wizard);
     }
 }
