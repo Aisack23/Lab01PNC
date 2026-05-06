@@ -11,14 +11,14 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/api/productos")
+@RequestMapping("/api/wizards")
 @AllArgsConstructor
 public class WizardController {
-    private final WizardServiceImpl productService;
+    private final WizardServiceImpl wizardService;
 
     @PostMapping("/create")
-    public ResponseEntity<Wizard> createProduct(@RequestBody Wizard wizard) {
-        productService.createWizard(wizard);
+    public ResponseEntity<Wizard> createWizard(@RequestBody Wizard wizard) {
+        wizardService.createWizard(wizard);
         return ResponseEntity
                 .status(HttpStatus.CREATED)
                 .body(wizard);
